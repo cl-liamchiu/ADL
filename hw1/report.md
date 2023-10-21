@@ -9,7 +9,7 @@
         >我在兩個模型使用的 Tokenizer 都是 BertTokenizer，而 BertTokenizer 是使用 WordPiece 的演算法，一個句子會根據詞彙表被分成很多個 subword，每個 subword 在詞彙表中都有其對應的 token，而如果 subword 是某個單字的一部份的話，WordPiece 會在 subword 前面加上 ##，表示其為某單字的一部份。除此之外，WordPiece 還有其他特殊的 token，例如：[CLS]、[SEP]、[UNK]、[PAD]，分別代表著句子的開頭、結尾、未知的詞彙、以及填充的詞彙。例如: "I am loving you" 會被轉換成 ["[CLS]", "I", "am", "love", "##ing", "you", "[SEP]"]。
 
         >而在中文的部分，我原本以為 BertTokenizer 會使用 WordPiece 的演算法，但根據 [bert 中的 README.md](https://github.com/google-research/bert/blob/master/README.md) 所提到 "We use character-based tokenization for Chinese, and WordPiece tokenization for all other languages." 所以我認為 BertTokenizer 在中文的部分是使用 character-based tokenization。他會直接將中文句子裡的每一個字直接轉換成一個個的 token 例如：「今天天氣真好」會被轉換成 ["今", "天", "天", "氣", "真", "好"]，然後再轉換成對應的 id。以下是我自己測試的程式碼範例：
-    ![example](/abc.png)
+    ![example](/cba.png)
     
 * Answer Span: 
     
