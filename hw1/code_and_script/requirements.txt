@@ -1,0 +1,15 @@
+--extra-index-url https://download.pytorch.org/whl/cu116
+torch==1.12.1+cu116
+torchvision==0.13.1+cu116
+torchaudio==0.12.1
+scikit-learn==1.1.2
+nltk==3.7
+tqdm
+numpy
+pandas
+transformers==4.22.2
+datasets==2.5.2
+accelerate==0.13.0
+evaluate
+matplotlib
+gdown
