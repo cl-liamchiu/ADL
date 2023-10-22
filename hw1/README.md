@@ -64,5 +64,7 @@ bash ./train_qa_end_to_end.sh /path/to/context.json /path/to/train.json /path/to
 
 5. Plot the loss and exact match
 ```bash
-python plot_report_figures.py /path/to/log_file /path/to/figure_dir/
+python plot_report_figures.py --log_file /path/to/log_file --output_dir /path/to/figure_dir/
+
+# if you train the model with recording loss and exact match, you will get the log file in the model_dir
 ``` 
