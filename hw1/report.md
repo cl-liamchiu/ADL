@@ -138,6 +138,7 @@
         > Eval_exact_match: 4.885343968095713
 
         > Eval_f1: 4.885343968095713
+        
         <u>(b) BERT </u>
 
         > 我有使用 BERT 預訓練模型所訓練出來的模型，表現最好的是使用 chinese-roberta-wwm-ext-large作為預訓練模型，表現結果如下：
