@@ -1,0 +1,14 @@
+accelerate launch run_summarization_no_trainer.py \
+  --model_name_or_path google/mt5-small \
+  --train_file ./data/train.jsonl  \
+  --validation_file ./data/public.jsonl \
+  --source_prefix "summarize: " \
+  --text_column maintext \
+  --summary_column title  \
+  --num_beams 1 \
+  --per_device_train_batch_size 2 \
+  --gradient_accumulation_steps 1 \
+  --checkpointing_steps '500' \
+  --per_device_eval_batch_size 16 \
+  --num_train_epochs 12 \
+  --output_dir ./output_with_accelerate_epoch12_record \

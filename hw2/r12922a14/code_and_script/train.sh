@@ -1,0 +1,14 @@
+python run_summarization_no_trainer.py \
+  --model_name_or_path google/mt5-small \
+  --train_file ../models_tokenizers_and_data/data/train.jsonl  \
+  --validation_file ../models_tokenizers_and_data/data/public.jsonl \
+  --source_prefix "summarize: " \
+  --text_column maintext \
+  --summary_column title  \
+  --num_beams 1 \
+  --per_device_train_batch_size 1 \
+  --per_device_eval_batch_size 8 \
+  --gradient_accumulation_steps 1 \
+  --checkpointing_steps '100' \
+  --num_train_epochs 1 \
+  --output_dir ../models_tokenizers_and_data/output \
