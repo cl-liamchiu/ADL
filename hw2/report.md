@@ -31,7 +31,7 @@
 * Learning Curves
     * Plot the learning curves (ROUGE versus training steps)
 
-        > ![Alt text](r12922a14/models_tokenizers_and_data/model/figures/rouge_score.png)
+        > ![Alt text](./r12922a14/models_tokenizers_and_data/model/figures/rouge_score.png)
 
 ### Q3: Generation Strategies
 * Stratgies
