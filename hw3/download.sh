@@ -1,0 +1,1 @@
+python -c "import gdown; gdown.download_folder('https://drive.google.com/drive/folders/1KQPZmy5SM1AfMOGzpTxBF1oPYyNEXFpP')"
